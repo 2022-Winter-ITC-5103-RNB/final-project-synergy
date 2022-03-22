@@ -1,0 +1,525 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    * {
+        font-size: 95%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    * {
+        font-size: 75%;
+    }
+}
+  
+  body {
+    margin: 0px;
+    font-family: 'segoe ui';
+  }
+  
+  .nav {
+     padding: 10px 30px; 
+    width: 100%;
+    background-color: #333333;
+    position: relative;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+  }
+  .nav > .nav-header > .nav-title > img {
+width: 10rem;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav .active {
+      background-color:  rgba(0, 0, 0, 0.3);
+      color: #cf2f2f;
+     
+  }
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: #333333;
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+        z-index: 2;
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+text-align: center;  
+}
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+        padding: 4rem 0;
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
+.jobs {
+  background-image: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(255,255,255,0) 100%),url(../assets/jobs.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 25vh;
+}
+  .careers{
+    background-image: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(255,255,255,0) 100%),url(../assets/careers.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+}
+.faqs{
+  background-image: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(255,255,255,0) 100%),url(../assets/faqs.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 25vh;
+}
+
+.heroSection h2{
+        font-size: 3rem;
+         color: aliceblue;
+         position: relative;
+         top:35%;
+         text-align: center;
+}
+
+main .content{
+    margin: 3rem 9rem;
+}
+main h1{
+    font-size: 2.3rem;
+    color:#cf2f2f;
+}
+
+main table {
+    border-collapse: collapse;
+   margin: 2rem ;
+    font-size: 1.3rem;
+}
+main th, main td {
+    padding: 1rem;
+}
+
+main thead tr{
+    text-align: left;
+    background-color: #cf2f2f;
+    color:#efefef;
+}
+
+main tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+main tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+main th.position{
+    width: 20%;
+}
+main th.location{
+    width: 20%;
+}
+main th.closingDate{
+    width: 20%;
+}
+main th.description{
+    width:40%;
+}
+
+
+.content > div {
+ margin-bottom: 3rem;
+}
+
+.content2 > div {
+   margin: 2rem ;
+   font-size: 1.3rem;
+}
+
+
+
+/*qna*/
+
+.qna{
+  border-left: 6px solid #242424;
+}
+.content2  div {
+  margin-bottom: 4rem;
+}
+.question{
+  background-color: rgb(207,47,46, 0.8);
+  color: #eee;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 1rem;
+}
+
+.answer{
+  padding: 1rem;
+  background-color: #eee;
+  color: #545454;
+  font-size: 1.3rem;
+}
+
+.qna i {
+  margin: .8rem;
+  font-size: 2.5rem;
+}
+
+.qna span{
+  padding:1rem;
+}
+
+/*cards*/
+.cardSection{
+  margin-bottom: 3rem;
+}
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --varyDarkBlue: hsl(234, 12%, 34%);
+  --grayishBlue: hsl(229, 6%, 66%);
+  --veryLightGray: hsl(0, 0%, 98%);
+  --weight1: 200;
+  --weight2: 400;
+  --weight3: 600;
+}
+
+
+
+@media (max-width: 400px) {
+  h1 {
+      font-size: 1.5rem;
+  }
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+  margin-top: 6rem;
+}
+
+.header h1{
+  color:#4e5163;
+}
+
+.box p {
+  color: var(--grayishBlue);
+}
+
+.box {
+  text-align: center;
+  height: 13rem;
+  border-radius: 5px;
+  box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+  padding: 30px;
+  margin: 20px;  
+}
+.box i {
+  font-size: 2.7rem;
+  margin: 1rem;
+  
+}
+
+@media (max-width: 450px) {
+  .box {
+      height: 200px;
+  }
+  .box h2{
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 950px) and (min-width: 450px) {
+  .box {
+      text-align: center;
+      height: 180px;
+  }
+  .box h2{
+    font-size: 1.3rem;
+  }
+}
+
+.red {
+  border-top: 3px solid #cf2f2f;
+}
+
+h2 {
+  color: var(--varyDarkBlue);
+  font-weight: var(--weight3);
+}
+
+
+@media (min-width: 950px) {
+  .row1-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .row2-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .box-down {
+      position: relative;
+      top: 150px;
+  }
+  .box {
+      width: 20%;
+   
+  }
+  .header p {
+      width: 30%;
+  }
+  
+}
+/*image layout*/
+.divB {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+button{
+  background:#cf2f2f;;
+  color:#fff;
+  border:none;
+  position:relative;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  
+}
+button:hover{
+  background:#fff;
+  color:#cf2f2f;
+}
+button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #ff5757;
+  transition:400ms ease all;
+}
+button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+button:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+
+.imageLayout > div {
+  align-items: center;
+ 
+}
+
+.imageLayout div div {
+  margin: 3rem;
+}
+
+.imageLayout h2 {
+  font-size: 2.4rem ;
+  margin: 1.3rem;
+}
+
+.imageLayout p {
+  font-size: 1.35rem;
+  margin: 1.3rem;
+}
+.imageLayout button{
+ height: 2.3rem;
+ font-size:1.1rem;
+ margin: 1.3rem;
+}
+@media only screen and (max-width: 1024px) {
+ .kk{
+     grid-row: 1;
+ }
+ .divB {
+     display: block;
+     padding: 2rem 0;
+ }
+
+.imageLayout p {
+   margin: 1.3rem 0;
+}
+.imageLayout h2 {
+   margin: 1.3rem 0;
+}
+.imageLayout button {
+   margin: 1.3rem 0;
+}
+}
+/* footer */
+
+footer {
+    background-color: #242424;
+}
+footer img {
+    margin-bottom: 1rem;
+}
+.footerContent h4{
+    margin-bottom: 1.5rem;
+}
+.footerContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 85%;
+    text-align: left;
+}
+
+.footerContent > div {
+    color: #eee;
+    margin: 2rem 1rem;
+    width: 20%;
+}
+.footerContent a {
+    text-decoration: none;
+    color: #bababa;
+}
+
+.quickLinks {
+height: 20vh;
+margin-left: 0;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+text-align: left;
+}
+.footerContent p {
+    font-size: 1rem;
+    color: #bababa;
+
+}
+
+footer hr{
+     border: none;
+     height: .3px;
+    margin: 0 2rem;
+    background-color: #545454;
+}
+
+.copyRight {
+    text-align: center;
+    color: #545454;
+    font-size: 0.9rem;
+    padding: 0.8rem;
+}
+
+i{
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 786px) {
+  main .content {
+      margin:2rem;
+  }
+   p {
+       font-size: 1.3rem;
+   }
+   main table {
+     margin: 2rem ;
+      font-size: 1.5rem;
+  }
+  main th, main td {
+      padding: 1rem 0.5rem;
+  }
+  h4{
+    font-size:1rem;
+  }
+  .footerContent > div {
+    width:30%;
+  }
+  .footerContent > div:first-of-type {
+    width: 90%;
+}
+.footerContent > div:last-of-type {
+  width: 90%;
+}
+.content2 > div {
+  margin: 2rem 0 ;
+  font-size: 1.3rem;
+}
+main table {
+ margin: 2rem 0;
+
+}
+  }
