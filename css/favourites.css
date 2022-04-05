@@ -394,6 +394,7 @@ ul.social-list a:hover {
 
 .fa-heart {
   color: red;
+  cursor: pointer;
 }
 
 .btn-secondary {
@@ -402,4 +403,8 @@ ul.social-list a:hover {
   font-size: 1.6rem !important;
   color: #fff;
   cursor: pointer;
+}
+
+.message {
+  text-align: center;
 }
