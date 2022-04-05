@@ -7,14 +7,14 @@
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
 />
-    <link rel="stylesheet" href="/css/hardeep_css.css" />
+    <link rel="stylesheet" href="../css/hardeep_css.css" />
   </head>
   <body>
     <!-- header section starts  -->
     <header class="header">
         <span class="logo">Food Point</span>
         <a href="#" >
-          <img src ="/assets/images/logo.jpeg">
+          <img src ="../assets/images/logo.jpeg">
         </a>
         
         <nav class="navbar">
@@ -38,7 +38,8 @@
             <input
               class="text"
               type="text"
-              name="Username"
+              name="username"
+              id="username"
               placeholder="Username"
               required=""
             />
@@ -46,6 +47,7 @@
               class="text email"
               type="email"
               name="email"
+              id="email"
               placeholder="Email"
               required=""
             />
@@ -53,6 +55,7 @@
               class="text mobileNumber"
               type="number"
               name="mobileNumber"
+              id="mobileNumber"
               placeholder="Mobile Number"
               required=""
             />
@@ -60,24 +63,26 @@
               class="text"
               type="password"
               name="password"
+              id="password"
               placeholder="Password"
               required=""
             />
             <input
               class="text pass"
               type="password"
-              name="password"
+              name="confirmPassword"
+              id="confirmPassword"
               placeholder="Confirm Password"
               required=""
             />
             <div class="terms-conditions-text">
               <label>
-                <input type="checkbox" class="checkbox" required="" />
+                <input type="checkbox" class="checkbox" id="checkbox" required="" />
                 <span>I Agree To The Terms & Conditions</span>
               </label>
               <div class="clear"></div>
             </div>
-            <input type="submit" value="SIGNUP" />
+            <input type="submit" onclick="return validation()" value="SIGNUP" />
           </form>
           <!-- form ends -->
           <p>Don't have an Account? <a href="#"> Login Now!</a></p>
@@ -116,5 +121,6 @@
           </div>
           </footer>
           <!-- footer section ends -->
+          <script src="../javascript/script.js"></script>
   </body>
 </html>
