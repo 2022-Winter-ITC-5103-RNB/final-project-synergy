@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .header img {
   height: 5rem;
 }
@@ -212,12 +217,6 @@ table{
 }
 
 main{
-  padding-top: 100px;
-  padding-left: 500px;
-  padding-right: 500px;
-  padding-bottom: 100px;
-  
-   
   
    font-size: larger;
    font-weight: bold;
@@ -309,4 +308,62 @@ font-size: large;
 #feedback
 {
   color: black;
+}
+
+.form{
+  display: block;
+  margin: 0 auto;
+}
+
+.container {
+  padding: 25px;
+}
+
+.form  .form-group{
+padding: 10px 5px;
+}
+
+.form .input-control .form-group{
+margin-left: 85px;
+}
+#submit {
+  background: #00732d;
+  color: white;
+}
+
+#comment {
+  display: flex;
+  align-items: center;
+  margin: 0 12px 0 229px;
+}
+
+@media  screen and (max-width:991px) {
+
+  main h2 {
+    font-size: 20px;
+  }
+  #footer-menu-list{
+    padding: 0
+  }
+
+  ul.social-list>li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+}
+
+@media  screen and (max-width:550px) {
+  #footer-menu-list{
+    padding: 0
+  }
+
+  ul.social-list>li {
+    margin: 0;
+    padding: 0;
+  }
+  .form-control{
+    width: 80%;
+  }
 }
