@@ -1,4 +1,3 @@
-
 //   header
 var x = document.getElementById("myTopnav");
 if (x.className === "navbar") {
@@ -6,47 +5,75 @@ if (x.className === "navbar") {
 } else {
   x.className = "navbar";
   x.className -= " responsive";
-
- 
 }
 function myFunction() {
-var x = document.getElementById("myTopnav");
-if (x.className === "navbar") {
-  x.className += " responsive";
-} else {
-  x.className = "navbar";
-
+  var x = document.getElementById("myTopnav");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
 }
-}
 
-function validateForm() {
-    let fname = document.forms["Information_form"]["name"].value;
-    let email = document.forms["Information_form"]["email"].value;
-    let phone_no = document.forms["Information_form"]["phone_no"].value;
-    let Query = document.forms["Information_form"]["Query"].value;
+const setError = (element, message) => {
+  const inputControl = element.parentElement;
+  const errorDisplay = inputControl.querySelector(".error");
 
-    if (fname == "") {
-        alert("Name must be filled out");
-      return false;
-    }
+  errorDisplay.innerText = message;
+  inputControl.classList.add("error");
+  // inputControl.classList.remove('success')
+};
+const form = document.getElementById("form");
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
 
-    if (email == "") {
-        alert("email must be filled out");
-        return false;
-    }else if(email.indexOf("@") == -1 || email.length < 6){
-        alert("Please Enter valid Email");
-    }
+  let res = validateInputs();
+  if (res) {
+    e.target.reset();
+  }
+  // e.target.reset();
+});
 
-    if (phone_no == "") {
-        alert("contact number must be filled out");
-        return false;
-    }
-    if (Query == "") {
-        alert("feedback must be filled out");
-        return false;
-    }
+function validateInputs() {
+  //getElementById
+  let fname = document.getElementById("name").value;
+  let fnameEl = document.getElementById("name");
+  let email = document.getElementById("email").value;
+  let emailEl = document.getElementById("email");
+  let phone_no = document.getElementById("phone_no").value;
+  let phone_noEl = document.getElementById("phone_no");
+  let query = document.getElementById("query").value;
+  let queryEl = document.getElementById("query");
 
-    alert("Form Submitted Successfully!");
-    return true;
+  //check validation
+  if (fname === "") {
+    setError(fnameEl, "Name must be filled out");
+  } else {
+    setError(fnameEl, "");
   }
 
+  if (email === "") {
+    setError(emailEl, "Email must be filled out");
+  } else {
+    setError(emailEl, "");
+  }
+
+  if (phone_no === "") {
+    setError(phone_noEl, "Phone Number must be filled out");
+  } else {
+    setError(phone_noEl, "");
+  }
+
+  if (query === "") {
+    setError(queryEl, "Query must be filled out");
+  } else {
+    setError(queryEl, "");
+  }
+
+  //return statement
+  if (fname === "" || email === "" || phone_no === "" || query === "") {
+    return false;
+  } else {
+    return true;
+  }
+}

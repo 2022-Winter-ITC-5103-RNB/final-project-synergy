@@ -73,6 +73,39 @@
       margin: 25px 15px 15px 15px;
       font-size: 25px;
   }
+
+  .input-control {
+    display: block;
+  }
+
+  .input-control .form-group {
+    display: flex;
+    padding: 10px 0;
+  }
+  .input-control .form-group label {
+    margin-right: 55px;
+  }
+  .input-control .form-group  label:nth-child(3)
+{
+margin-right: 0;
+}  
+  .input-control .form-group .error {
+    
+    padding: 15px 15px;
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+    
+  }
+ .submit {
+   display: block;
+   background-color: #27ae60;
+   color: white;
+   padding: 10px 30px;
+   font-size: 16px;
+   margin: 0 auto;
+   border-radius: 10%;
+ }
   @media (max-width: 991px) {
     html {
       font-size: 55%;
@@ -190,7 +223,7 @@ form{
     grid-area: 1 / 1; /* first row, first column */
     /* padding: 20px;  */
     margin:0 auto;
-    width: 50%;  
+    width: 80%;  
     align-content: center;
   }
 
