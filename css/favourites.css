@@ -24,7 +24,6 @@
 }
 
 .grid-container>div {
-  background-color: #f1f1f1;
   text-align: center;
   font-size: 25px;
 }
@@ -81,6 +80,7 @@
   background-color: #e9e6e6 !important;
   margin-left: 16px;
   margin: 0;
+  cursor: pointer;
 }
 
 .col-lg-3 {
@@ -97,6 +97,7 @@
 .item-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
+  margin: 5px;
 }
 
 .item {
@@ -104,6 +105,18 @@
   padding: 7px;
   font-size: 15px;
   text-align: center;
+}
+
+@media screen and (min-width: 1000px) {
+  .card-title {
+    font-weight: 700;
+    font-size: 18px;
+    color: rgb(43, 70, 37);
+  }
+
+  .item-container {
+    margin-left: 60px;
+  }
 }
 
 @media screen and (min-width: 300px) and (max-width: 1000px) {
@@ -382,12 +395,33 @@ ul.social-list a:hover {
 
 .fa-heart {
   color: red;
+  cursor: pointer;
 }
 
-.btn-secondary{
+.btn-secondary {
   background-color: #41A451 !important;
   padding: 4px 2rem !important;
   font-size: 1.6rem !important;
   color: #fff;
   cursor: pointer;
+}
+
+.message {
+  text-align: center;
+}
+
+.price {
+  color: black !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.active {
+  text-decoration: none;
+}
+
+a:hover:not(.active) {
+  text-decoration: none;
 }
