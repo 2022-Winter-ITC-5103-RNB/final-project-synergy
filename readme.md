@@ -1,4 +1,4 @@
-## Assignment Name: : Project Task Phrase 1
+## Assignment Name: : Project Task Phrase 2
 
 ## Team Name: Synergy
 
@@ -14,10 +14,12 @@
 
 ## Tasks
 
-- [x] Create one page with html, css and javascript
+- [x] Create one page(Favourites) with html, css and javascript
 
 ## Leaning curve and challenges
-
+- Learn Array of object
+- Learn How to append array to the html content.
+- Faced some css issues after appending item list data into the html through for loop
 
 ## Resources
 

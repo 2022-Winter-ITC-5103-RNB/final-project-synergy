@@ -212,3 +212,8 @@ h2 {
         padding: 25px;
     }
 }
+
+.error {
+    color: red;
+    font-size: 15px;
+}
