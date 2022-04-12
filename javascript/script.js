@@ -14,12 +14,6 @@ function validation() {
     }
 }
 
-// function subscribe(){
-//     document.getElementById('subscribe').innerHTML = 'Thanks, You are successfully subscribed';
-//     const email = document.getElementById('subscribe-email').value;
-//     localStorage.setItem('email',email);
-//     document.getElementById('subscribe-email').innerHTML = ' ';
-// }
 function sendSubscription() {
     const email = document.getElementById('subscription-email').value;
     let array = [];
