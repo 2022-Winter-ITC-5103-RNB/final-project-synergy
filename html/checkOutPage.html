@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
-    <link href="/css/checkOutPage.css" rel="stylesheet">
+    <link href="../Css/checkOutPage.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- font awesome cdn link for vector icons and logos -->
     <link
       rel="stylesheet"
@@ -20,7 +22,7 @@
      <header class="header">
         <span class="logo">Food Point</span>
         <a href="#" >
-         <img src ="/assets/images/logo.jpeg">
+         <img src ="../assets/images/logo.jpeg">
         </a>
         
         <nav class="navbar">
@@ -38,49 +40,56 @@
        <div class="wrapper">
         <h2>Payment Form</h2>
          
-   <form method="POST">
+   <form method="get" action="#">
             <h4>Account</h4>
       <div class="input-group">
                     <div class="input-box">
-                        <input type="text" placeholder="Full Name" required class="name">
+                        <input type="text" placeholder="Full Name" required class="name" id="fname">
                         <i class="fa fa-user icon"></i>
                     </div>
                     <div class="input-box">
-                        <input type="text" placeholder="Nick Name" required class="name">
+                        <input type="text" placeholder="Nick Name" required class="name"  id="nick">
                         <i class="fa fa-user icon"></i>
                     </div>
       </div>
       <div class="input-group">
                     <div class="input-box">
-                        <input type="email" placeholder="Email Adress" required class="name">
+                        <input type="email" placeholder="Email Adress" required class="name" id="email">
                         <i class="fa fa-envelope icon"></i>
                     </div>
+                    <div class="input-box">
+                      <input type="text" placeholder="Address" required class="name" id="address"> 
+                      <i class="fa fa-home icon"></i>
+                  </div>
       </div>
       <div class="input-group">
-                    <div class="input-box">
-                        <h4> Date of Birth</h4>
-                        <input type="text" placeholder="DD" class="dob">
-                        <input type="text" placeholder="MM" class="dob">
-                        <input type="text" placeholder="YYYY" class="dob">
-                    </div>
-      <div class="input-box">
+            <div class="input-box">
+              <input type="text" placeholder="City" required class="name" id="city">
+              <i class="fa fa-location-arrow icon"></i>
+          </div>
+
+          <div class="input-box">
+            <input type="text" placeholder="Postal Code" required class="name" id="pcode">
+            <i class="fa fa-long-arrow-left icon"></i>
+        </div>
+      <!-- <div class="input-box">
                         <h4>Gender</h4>
                         <input type="radio" id="b1" name="gendar" checked class="radio">
                         <label for="b1">Male</label>
                         <input type="radio" id="b2" name="gendar" class="radio">
                         <label for="b2">Female</label>
-                    </div>
-      </div>
+                    </div> -->
+      </div> 
       <div class="input-group">
                     <div class="input-box">
                         <h4>Payment Details</h4>
-                       <input type="radio" name="pay" id="bc1" checked class="radio">
-                        <label for="bc1"><span><i class="fa fa-cc-visa"></i> Credit Card</span></label>
-                        <input type="radio" name="pay" id="bc2" class="radio">
-                        <label for="bc2"><span><i class="fa fa-cc-paypal"></i> Paypal</span></label>
+                        <input type="radio" name="pay" id="bc1" checked class="radio" value="Cash On Delivery">
+                        <label for="bc1"><span><i class="fa fa-cc-visa"></i> Cash On Delivery</span></label>
+                        <input type="radio" name="pay" id="bc2" class="radio" value="Card On Delivery">
+                        <label for="bc2"><span><i class="fa fa-cc-paypal"></i>Card On Delivery</span></label>
                     </div>
       </div>
-      <div class="input-group">
+      <!-- <div class="input-group">
                     <div class="input-box">
                         <input type="tel" placeholder="Card Number" required class="name">
                         <i class="fa fa-credit-card icon"></i>
@@ -103,11 +112,11 @@
                             <option>2022</option>
                         </select>
                     </div>
-      </div>
+      </div> -->
       <div class="input-group">
                     <div class="input-box">
                         <button type="submit">PAY NOW</button>
-                    </div>
+                    </div> 
     </div>
     </form>
     </div>
@@ -146,5 +155,7 @@
   <!-- footer section ends -->
 
   
+
+  <script src="../javascript/checkOut.js"></script>
 </body>
 </html>
