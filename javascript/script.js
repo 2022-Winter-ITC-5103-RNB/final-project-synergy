@@ -21,13 +21,12 @@ function sendSubscription() {
     if(oldArray !== null) {
         array.push(oldArray, email)
     } else {
-        array.push(email)
+        array.push(email) 
 
     }
     localStorage.setItem('SubscriptionEmail', array)
     document.getElementById('subscribe').innerHTML = 'Thanks, You are successfully subscribed';
-    document.getElementById('subscription-email').value = '';
-    
+    document.getElementById('subscription-email').value = '';  
 }
 
 function sendData() {
