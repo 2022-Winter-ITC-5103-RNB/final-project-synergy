@@ -14,11 +14,26 @@ function validation() {
     }
 }
 
-function subscribe(){
+// function subscribe(){
+//     document.getElementById('subscribe').innerHTML = 'Thanks, You are successfully subscribed';
+//     const email = document.getElementById('subscribe-email').value;
+//     localStorage.setItem('email',email);
+//     document.getElementById('subscribe-email').innerHTML = ' ';
+// }
+function sendSubscription() {
+    const email = document.getElementById('subscription-email').value;
+    let array = [];
+    const oldArray = localStorage.getItem("SubscriptionEmail");
+    if(oldArray !== null) {
+        array.push(oldArray, email)
+    } else {
+        array.push(email)
+
+    }
+    localStorage.setItem('SubscriptionEmail', array)
     document.getElementById('subscribe').innerHTML = 'Thanks, You are successfully subscribed';
-    const email = document.getElementById('subscribe-email').value;
-    localStorage.setItem('email',email);
-    document.getElementById('subscribe-email').innerHTML = ' ';
+    document.getElementById('subscription-email').value = '';
+    
 }
 
 function sendData() {
