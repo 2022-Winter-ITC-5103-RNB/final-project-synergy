@@ -520,7 +520,7 @@ footer .newsletter form input[type="email"] {
   text-transform: none;
 }
 
-footer .newsletter form input[type="submit"] {
+footer .newsletter form input[type="button"] {
   padding: 0 2rem;
   font-size: 1.6rem;
   color: #fff;
@@ -528,9 +528,18 @@ footer .newsletter form input[type="submit"] {
   cursor: pointer;
 }
 
-footer .newsletter form input[type="submit"]:hover {
+footer .newsletter form input[type="button"]:hover {
   background: #130f40;
 }
+
+.subscribe{
+text-align: center;
+}
+.subscribe span{
+font-size: 1.6rem;
+color:#27ae60;
+}
+
 
 
 
@@ -568,7 +577,7 @@ footer .box-container .box a i {
 .footer-menu-list {
   text-align: center;
   width: 100%;
-  margin-top: 4rem;
+
 }
 .footer-menu-list li {
 	padding: 0 20px;
@@ -628,19 +637,7 @@ ul.social-list a:hover {
   color: #41A451;
 }
 
-@media (max-width: 991px) {
-  html {
-    font-size: 55%;
-  }
-  .header {
-    padding: 2rem;
-  }
-  section {
-    padding: 2rem;
-  }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 1076px) {
   .header .navbar {
     position: absolute;
     top: 99%;
@@ -652,7 +649,7 @@ ul.social-list a:hover {
     
   }
   .header .navbar a {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 2rem;
     display: block;
   }

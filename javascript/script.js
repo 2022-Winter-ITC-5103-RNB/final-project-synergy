@@ -1,5 +1,4 @@
 function validation() {
-    console.log("hi")
     const password = document.getElementById('password').value;
     const confirmPassword = document.getElementById('confirmPassword').value;
     const email = document.getElementById('email').value;
@@ -11,13 +10,18 @@ function validation() {
         alert("Email Already Exists");
         return false
     } else {
-        console.log("hi=loo")
         return sendData();
     }
 }
 
+function subscribe(){
+    document.getElementById('subscribe').innerHTML = 'Thanks, You are successfully subscribed';
+    const email = document.getElementById('subscribe-email').value;
+    localStorage.setItem('email',email);
+    document.getElementById('subscribe-email').innerHTML = ' ';
+}
+
 function sendData() {
-    console.log("hill")
     const username = document.getElementById('username').value;
     const email = document.getElementById('email').value;
     const mobileNumber = document.getElementById('mobileNumber').value;
