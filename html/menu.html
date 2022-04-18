@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
-    <link href="/final-project-synergy/css/menu.css" rel="stylesheet">
+    <link href="../Css/menu.css" rel="stylesheet">
+    
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- font awesome cdn link for vector icons and logos -->
     <link
       rel="stylesheet"
@@ -23,7 +25,7 @@
      <header class="header">
         <span class="logo">Food Point</span>
         <a href="#" >
-         <img src ="/final-project-synergy/assets/images/logo.jpeg">
+         <img src ="../images/logo.jpg">
         </a>
         
         <nav class="navbar">
@@ -33,6 +35,9 @@
           <a href="#">Career</a>
           <a href="#">About us</a>
           <a href="#">Login</a>
+
+          <i class="fa" style="font-size:24px" onclick="window.location.href='addToCart.html'">&#xf07a;</i>
+          <span class='badge badge-warning' id='lblCartCount'> 0 </span>
         </nav>
      </header>
       <!-- header section ends  -->   
@@ -45,39 +50,39 @@
         <div class="item-container">
             <div class="item">
                 <div class="card">
-                    <img class="card-img-top" src="/final-project-synergy/assets/images/cbc.jpg" alt="Card image cap">
+                    <img class="card-img-top img" src="../images/cbc.jpg" alt="Card image cap" >
                     <div class="card-body">
                         <div class="row">
                             <div class="col-lg-10">
-                                <h3 class="card-title">Cool Blue Crush</h3>
+                                <h3 class="card-title h3">Cool Blue Crush</h3>
                                 <h5>Cool Blue is a crush made from curacao syrup and is beautiful to look at because of tranquil color.</h5>
                                 <p class="price">Price: <span style="font-weight: 650;">$9</span></p>
                             </div>
                             <div class="col-lg-2"><i class="fa fa-heart"></i></div>
                         </div>
-                        <a href="#" class="btn btn-secondary">ADD TO CART</a>
+                        <button class="btn btn-secondary" >ADD TO CART</button>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="card">
-                    <img class="card-img-top" src="/final-project-synergy/assets/images/welcomeD2.JPG" alt="Card image cap">
+                    <img class="card-img-top img" src="../images/welcomeD2.JPG" alt="Card image cap">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-lg-10">
-                                <h3 class="card-title">Fresh Apple Mocktail</h3>
+                                <h3 class="card-title" value="Fresh Apple Mocktail">Fresh Apple Mocktail</h3>
                                 <h5>Fresh Apple Mocktail is very refreshing and tasty as it has apple,mint,lemon and ginger.</h5>
                                  <p class="price">Price: <span style="font-weight: 650;">$13</span></p>
                             </div>
                             <div class="col-lg-2"><i class="fa fa-heart"></i></div>
                         </div>
-                        <a href="#" class="btn btn-secondary">ADD TO CART</a>
+                        <button class="btn btn-secondary" >ADD TO CART</button>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="card">
-                    <img class="card-img-top" src="/final-project-synergy/assets/images/mintMargerita.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="../images/mintMargerita.jpg" alt="Card image cap">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-lg-10">
@@ -87,13 +92,13 @@
                             </div>
                             <div class="col-lg-2"><i class="fa fa-heart"></i></div>
                         </div>
-                        <a href="#" class="btn btn-secondary">ADD TO CART</a>
+                        <button class="btn btn-secondary" >ADD TO CART</button>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="card">
-                    <img class="card-img-top" src="/final-project-synergy/assets/images/ginLemonade.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="../images/ginLemonade.jpg" alt="Card image cap">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-lg-10">
@@ -103,7 +108,7 @@
                             </div>
                             <div class="col-lg-2"><i class="fa fa-heart"></i></div>
                         </div>
-                        <a href="#" class="btn btn-secondary">ADD TO CART</a>
+                        <button class="btn btn-secondary" >ADD TO CART</button>
                     </div>
                 </div>
             </div>
@@ -115,7 +120,7 @@
             <div class="item-container">
             <div class="item">
                 <div class="card">
-                    <img class="card-img-top" src="/final-project-synergy/assets/images/paneer Butter Masala.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="../images/paneer Butter Masala.jpg" alt="Card image cap">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-lg-10">
@@ -125,13 +130,13 @@
                             </div>
                             <div class="col-lg-2"><i class="fa fa-heart"></i></div>
                         </div>
-                        <a href="#" class="btn btn-secondary">ADD TO CART</a>
+                        <button class="btn btn-secondary" >ADD TO CART</button>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="card">
-                    <img class="card-img-top" src="/final-project-synergy/assets/images/pannerBhurji.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="../images/pannerBhurji.jpg" alt="Card image cap">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-lg-10">
@@ -141,13 +146,13 @@
                             </div>
                             <div class="col-lg-2"><i class="fa fa-heart"></i></div>
                         </div>
-                        <a href="#" class="btn btn-secondary">ADD TO CART</a>
+                        <button class="btn btn-secondary" >ADD TO CART</button>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="card">
-                    <img class="card-img-top" src="/final-project-synergy/assets/images/paneerLababdar.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="../images/paneerLababdar.jpg" alt="Card image cap">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-lg-10">
@@ -157,13 +162,13 @@
                             </div>
                             <div class="col-lg-2"><i class="fa fa-heart"></i></div>
                         </div>
-                        <a href="#" class="btn btn-secondary">ADD TO CART</a>
+                        <button class="btn btn-secondary" >ADD TO CART</button>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="card">
-                    <img class="card-img-top" src="/final-project-synergy/assets/images/paneer-tikka-masala-recipe-1.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="../images/paneer-tikka-masala-recipe-1.jpg" alt="Card image cap">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-lg-10">
@@ -173,13 +178,13 @@
                             </div>
                             <div class="col-lg-2"><i class="fa fa-heart"></i></div>
                         </div>
-                        <a href="#" class="btn btn-secondary">ADD TO CART</a>
+                        <button class="btn btn-secondary" >ADD TO CART</button>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="card">
-                    <img class="card-img-top" src="/final-project-synergy/assets/images/koyaKaju.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="../images/koyaKaju.jpg" alt="Card image cap">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-lg-10">
@@ -191,13 +196,13 @@
                             </div>
                             <div class="col-lg-2"><i class="fa fa-heart"></i></div>
                         </div>
-                        <a href="#" class="btn btn-secondary">ADD TO CART</a>
+                        <button class="btn btn-secondary" >ADD TO CART</button>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="card">
-                    <img class="card-img-top" src="/final-project-synergy/assets/images/kajuCurry.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="../images/kajuCurry.jpg" alt="Card image cap">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-lg-10">
@@ -207,13 +212,13 @@
                             </div>
                             <div class="col-lg-2"><i class="fa fa-heart"></i></div>
                         </div>
-                        <a href="#" class="btn btn-secondary">ADD TO CART</a>
+                        <button class="btn btn-secondary" >ADD TO CART</button>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="card">
-                    <img class="card-img-top" src="/final-project-synergy/assets/images/kajuButterMasala.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="../images/kajuButterMasala.jpg" alt="Card image cap">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-lg-10">
@@ -223,13 +228,13 @@
                             </div>
                             <div class="col-lg-2"><i class="fa fa-heart"></i></div>
                         </div>
-                        <a href="#" class="btn btn-secondary">ADD TO CART</a>
+                        <button class="btn btn-secondary" >ADD TO CART</button>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="card">
-                    <img class="card-img-top" src="/final-project-synergy/assets/images/matarPaneer.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="../images/matarPaneer.jpg" alt="Card image cap">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-lg-10">
@@ -239,13 +244,13 @@
                             </div>
                             <div class="col-lg-2"><i class="fa fa-heart"></i></div>
                         </div>
-                        <a href="#" class="btn btn-secondary">ADD TO CART</a>
+                        <button class="btn btn-secondary" >ADD TO CART</button>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="card">
-                    <img class="card-img-top" src="/final-project-synergy/assets/images/jeeraRice.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="../images/jeeraRice.jpg" alt="Card image cap">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-lg-10">
@@ -255,13 +260,13 @@
                             </div>
                             <div class="col-lg-2"><i class="fa fa-heart"></i></div>
                         </div>
-                        <a href="#" class="btn btn-secondary">ADD TO CART</a>
+                        <button class="btn btn-secondary" >ADD TO CART</button>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="card">
-                    <img class="card-img-top" src="/final-project-synergy/assets/images/dalFry.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="../images/dalFry.jpg" alt="Card image cap">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-lg-10">
@@ -271,13 +276,13 @@
                             </div>
                             <div class="col-lg-2"><i class="fa fa-heart"></i></div>
                         </div>
-                        <a href="#" class="btn btn-secondary">ADD TO CART</a>
+                        <button class="btn btn-secondary" >ADD TO CART</button>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="card">
-                    <img class="card-img-top" src="/final-project-synergy/assets/images/dalTadka.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="../images/dalTadka.jpg" alt="Card image cap">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-lg-10">
@@ -287,7 +292,7 @@
                             </div>
                             <div class="col-lg-2"><i class="fa fa-heart"></i></div>
                         </div>
-                        <a href="#" class="btn btn-secondary">ADD TO CART</a>
+                        <button class="btn btn-secondary" >ADD TO CART</button>
                     </div>
                 </div>
             </div>
@@ -299,7 +304,7 @@
             <div class="item-container">
             <div class="item">
                 <div class="card">
-                    <img class="card-img-top" src="/final-project-synergy/assets/images/browniWithIceCream.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="../images/browniWithIceCream.jpg" alt="Card image cap">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-lg-10">
@@ -309,13 +314,13 @@
                             </div>
                             <div class="col-lg-2"><i class="fa fa-heart"></i></div>
                         </div>
-                        <a href="#" class="btn btn-secondary">ADD TO CART</a>
+                        <button class="btn btn-secondary" >ADD TO CART</button>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="card">
-                    <img class="card-img-top" src="/final-project-synergy/assets/images/cookiesAndCream.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="../images/cookiesAndCream.jpg" alt="Card image cap">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-lg-10">
@@ -325,13 +330,13 @@
                             </div>
                             <div class="col-lg-2"><i class="fa fa-heart"></i></div>
                         </div>
-                        <a href="#" class="btn btn-secondary">ADD TO CART</a>
+                        <button class="btn btn-secondary" >ADD TO CART</button>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="card">
-                    <img class="card-img-top" src="/final-project-synergy/assets/images/sizzlingChocolateBrownie.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="../images/sizzlingChocolateBrownie.jpg" alt="Card image cap">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-lg-10">
@@ -341,13 +346,13 @@
                             </div>
                             <div class="col-lg-2"><i class="fa fa-heart"></i></div>
                         </div>
-                        <a href="#" class="btn btn-secondary">ADD TO CART</a>
+                        <button class="btn btn-secondary" >ADD TO CART</button>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="card">
-                    <img class="card-img-top" src="/final-project-synergy/assets/images/kitKatIceCreamPie.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="../images/kitKatIceCreamPie.jpg" alt="Card image cap">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-lg-10">
@@ -357,7 +362,7 @@
                             </div>
                             <div class="col-lg-2"><i class="fa fa-heart"></i></div>
                         </div>
-                        <a href="#" class="btn btn-secondary">ADD TO CART</a>
+                        <button class="btn btn-secondary" >ADD TO CART</button>
                     </div>
                 </div>
             </div>
@@ -397,7 +402,8 @@
       </div>
       </footer>
       <!-- footer section ends -->
+     
+      <script src="/Js/menu.js"></script>
 
-      <script src="/final-project-synergy/javascript/menu.js"></script>
 </body>
 </html>

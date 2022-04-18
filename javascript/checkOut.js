@@ -3,7 +3,7 @@ const btn=document.querySelector("button");
 
 const paymentDetails=[];
 
-let i=0;
+let i=1;
 
 btn.addEventListener("click",function(){
     let name1 =document.getElementById("fname").value;
@@ -24,51 +24,65 @@ btn.addEventListener("click",function(){
             payment= document.getElementById("bc1").value;
         }
 
-        console.log(name1 + nick + email +address + city + pcode + payment);
+        // console.log(name1 + nick + email +address + city + pcode + payment);
+        
+        
+        // const d=JSON.parse(localStorage.getItem('paymentDetails'));
 
+      
 
-        let details= {
-            id : i+1,
-            fname : name1,
-            nickName : nick,
-            email :email,
-            address : address,
-            city : city,
-            pcode : pcode,
-            payment: payment
-        };
+                let details= {
+                    id : i,
+                    fname : name1,
+                    nickName : nick,
+                    email :email,
+                    address : address,
+                    city : city,
+                    pcode : pcode,
+                    payment: payment
+                };
 
-        if(JSON.parse(localStorage.getItem('paymentDetails'))=== null)
-        {
-            paymentDetails.push(details);
-            localStorage.setItem("paymentDetails",JSON.stringify(paymentDetails));
-            window.location.reload();
-           
-        }
-        else
-        {
-            const localItems=JSON.parse(localStorage.getItem('paymentDetails'));
-
-            localItems.map(data =>{
-
-                if(details.id == data.id)
+                if(JSON.parse(localStorage.getItem('paymentDetails'))=== null)
                 {
-                    alert("Already Exist")
+                    paymentDetails.push(details);
+                    localStorage.setItem("paymentDetails",JSON.stringify(paymentDetails));
+                    // window.location.reload();
+                    console.log("hii");
+                
                 }
                 else
                 {
-                    paymentDetails.push(data);
-                }
-              
-            });
-            paymentDetails.push(details);
-            localStorage.setItem('paymentDetails',JSON.stringify(paymentDetails));
-            window.location.reload();
-           
-        }
-        paymentDetails.push(details);
+                    const localItems=JSON.parse(localStorage.getItem('paymentDetails'));
+                    
+                    details.id=localItems.length+1;
+                                      
+                    localItems.push(details);
+                    
+                    localStorage.setItem('paymentDetails',JSON.stringify(localItems));                 
 
-        lo
+                  
+                
+                }
+
+                     
+// localItems.map(data =>{
+
+                    //     if(details.id == data.id)
+                    //     {
+                    //        
+                    //         
+                    //     }
+                    //     else
+                    //     {
+                    //         paymentDetails.push(data);
+                    //         console.log("hhhhhh");
+                    //     }
+                      
+                    // });
+                    // paymentDetails.push(details);
+                    // localStorage.setItem('paymentDetails',JSON.stringify(paymentDetails));
+                    // window.location.reload();
+       
      
     }
     else
