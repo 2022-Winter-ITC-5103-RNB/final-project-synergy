@@ -5,8 +5,8 @@
     <title>Food Point</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/css/item-detail.css">
-    <link rel="shortcut icon" href="assets/images/logo.jpeg">
+    <link rel="stylesheet" href="../css/item-detail.css">
+    <link rel="shortcut icon" href="../assets/images/logo.jpeg">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -19,17 +19,19 @@
     <header class="header">
         <span class="logo">Food Point</span>
         <a href="#">
-            <img src="/assets/images/logo.jpeg">
+            <img src="../assets/images/logo.jpeg">
         </a>
 
         <nav class="navbar">
             <a href="#">Home</a>
-            <a href="#">Menu</a>
-            <a href="#">Favourites</a>
-            <a href="#">Career</a>
-            <a href="#">About us</a>
-            <a href="#">Login</a>
-        </nav>
+            <a href="gallery.html">gallery</a>
+            <a href="menu.html">Menu</a>
+            <a href="favourites.html">Favourites</a>
+            <a href="careers.html">Career</a>
+            <a href="AboutUs.html">About us</a>
+            <a href="login.html">Logout</a>
+          </nav>
+
     </header>
     <!-- header section ends  -->
 
@@ -39,7 +41,7 @@
         <!-- About Section -->
         <div class="w3-row w3-padding-64 grid-container" id="about">
             <div class="w3-col m6 w3-padding-large w3-hide-small item1">
-                <img src="/assets/images/chholebhature.jpg" class="w3-round w3-image" alt="Table Setting" width="600"
+                <img src="../assets/images/chholebhature.jpg" class="w3-round w3-image" alt="Table Setting" width="600"
                     height="750">
             </div>
 
@@ -49,7 +51,7 @@
                         <h2>Dal Bati [620-1052 cal]</h2>
                     </div>
                     <div class="col-3">
-                        <h2 class="left">$ 9.35</h2>
+                        <h2 class="left">$ <span id="amount"></span></h2>
                     </div>
                 </div>
                 <div class="row rating mt-2">
@@ -67,15 +69,16 @@
                     <div class="col-12">
                         <h3 class="mt-4">Add Quantity</h3>
                         <div class="row">
-                            <i class="fa fa-plus add-quantity"></i>
-                            <span class="w3-large add-quantity">1</span>
-                            <i class="fa fa-minus add-quantity"></i>
+                            <i class="fa fa-plus add-quantity" onclick="editQuantity('add')"></i>
+                            <span class="w3-large add-quantity quantity"></span>
+                            <i class="fa fa-minus add-quantity" onclick="editQuantity('sub')"></i>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-6">
-                        <a href="#" class="btn btn-secondary mt-3">Add <span>1</span> to Cart - $<span> 9.35</span></a>
+                        <a href="#" class="btn btn-secondary mt-3">Add <span class="totalQuantity"></span> to Cart - $
+                            <span id="total"></span></a>
                     </div>
                     <div class="col-lg-6">
 
@@ -106,17 +109,19 @@
         </div>
         <div class="social-media-icons">
             <ul class="social-list">
-                <li><i class="fab fa-facebook-f"></i></li>
-                <li><i class="fab fa-instagram"></i></li>
-                <li><i class="fab fa-twitter"></i></li>
-                <li><i class="fab fa-youtube"></i></li>
-                <li><i class="fab fa-pinterest-p"></i></li>
-            </ul>
+                <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"> </i></a></li>
+                <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="https://www.pinterest.ca/"><i class="fab fa-pinterest-p"></i></a></li>
+              </ul>
             <p class="copyright">&copy; 2022 Food Point. All Rights Reserved. Privacy Policy. Design by <a
                     href="">Synergy</a></p>
         </div>
     </footer>
     <!-- footer section ends -->
+
+    <script src="../javascript/item-detail.js"></script>
 
 </body>
 

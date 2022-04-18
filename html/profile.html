@@ -18,13 +18,12 @@
 
         <nav class="navbar">
           <a href="#">Home</a>
-          <a href="#">Menu</a>
-          <a href="#">Orders</a>
-          <a href="#">Favourites</a>
-          <a href="#">Career</a>
-          <a href="#">Contact us</a>
-          <a href="#">About us</a>
-          <a href="#">Logout</a>
+          <a href="gallery.html">gallery</a>
+          <a href="menu.html">Menu</a>
+          <a href="favourites.html">Favourites</a>
+          <a href="careers.html">Career</a>
+          <a href="AboutUs.html">About us</a>
+          <a href="login.html">Logout</a>
         </nav>
       </header>
     </div>
@@ -33,12 +32,7 @@
       <table>
         <h2 id="head">My Profile</h2>
 
-        <form
-          onsubmit="return validateForm()"
-          method="get"
-          name="profile"
-          action="profilesaved.html"
-        >
+        <form onsubmit="return validateForm()" method="get" name="profile">
           <tr>
             <td>
               <label for="profile"></label>
@@ -129,6 +123,11 @@
               <input type="reset" name="reset" id="reset" />
             </td>
           </tr>
+
+          <tr>
+            <td><label for="date">Date of birth :</label></td>
+            <td><input type="date" id="date" name="date" /></td>
+          </tr>
         </form>
       </table>
     </main>
@@ -154,11 +153,29 @@
       </div>
       <div class="social-media-icons">
         <ul class="social-list">
-          <li><i class="fab fa-facebook-f"></i></li>
-          <li><i class="fab fa-instagram"></i></li>
-          <li><i class="fab fa-twitter"></i></li>
-          <li><i class="fab fa-youtube"></i></li>
-          <li><i class="fab fa-pinterest-p"></i></li>
+          <li>
+            <a href="https://www.facebook.com/"
+              ><i class="fab fa-facebook-f"> </i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.pinterest.ca/"
+              ><i class="fab fa-pinterest-p"></i
+            ></a>
+          </li>
         </ul>
         <p class="copyright">
           &copy; 2022 Food Point. All Rights Reserved. Privacy Policy. Design by

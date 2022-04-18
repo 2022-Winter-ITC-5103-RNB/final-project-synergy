@@ -9,32 +9,31 @@
     />
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="/css/hardeep_css.css" />
+    <link rel="stylesheet" href="../css/hardeep_css.css" />
   </head>
   <body>
     <!-- header section starts  -->
     <header class="header">
       <span class="logo">Food Point</span>
       <a href="#" >
-        <img src ="/assets/images/logo.jpeg">
+        <img src ="../assets/images/logo.jpeg">
       </a>
       
       <nav class="navbar">
         <a href="#">Home</a>
         <a href="gallery.html">gallery</a>
-        <a href="#">Menu</a>
-        <a href="#">Favourites</a>
-        <a href="#">Career</a>
-        <a href="#">About us</a>
-        <a href="#">Login</a>
-        <a href="register.html">Register</a>
+        <a href="menu.html">Menu</a>
+        <a href="favourites.html">Favourites</a>
+        <a href="careers.html">Career</a>
+        <a href="AboutUs.html">About us</a>
+        <a href="login.html">Logout</a>
       </nav>
     </header>
     <!-- header section ends  -->
 
     <!-- home section starts  -->
     <section class="background" id="background">
-      <img src="/assets/images/img_3.jpg" class="background-img" />
+      <img src="../assets/images/img_3.jpg" class="background-img" />
     </section>
     <!-- home section ends  -->
 
@@ -46,13 +45,13 @@
 
       <div class="box-container">
         <a href="#" class="box">
-          <img src="/assets/images/chef_1.jpg" />
+          <img src="../assets/images/chef_1.jpg" />
         </a>
         <a href="#" class="box">
-          <img src="/assets/images/chef_1.jpg" />
+          <img src="../assets/images/chef_1.jpg" />
         </a>
         <a href="#" class="box">
-          <img src="/assets/images/chef_1.jpg" />
+          <img src="../assets/images/chef_1.jpg" />
         </a>
       </div>
     </section>
@@ -61,27 +60,27 @@
     <!-- category section starts  -->
     <section class="category">
       <a href="#" class="box">
-        <img src="/assets/images/cat_1.png" />
+        <img src="../assets/images/cat_1.png" />
         <h3>combo</h3>
       </a>
       <a href="#" class="box">
-        <img src="/assets/images/cat_2.png" />
+        <img src="../assets/images/cat_2.png" />
         <h3>pizza</h3>
       </a>
       <a href="#" class="box">
-        <img src="/assets/images/cat_3.png" />
+        <img src="../assets/images/cat_3.png" />
         <h3>burger</h3>
       </a>
       <a href="#" class="box">
-        <img src="/assets/images/cat_4.png" />
+        <img src="../assets/images/cat_4.png" />
         <h3>chicken</h3>
       </a>
       <a href="#" class="box">
-        <img src="/assets/images/cat_5.png" />
+        <img src="../assets/images/cat_5.png" />
         <h3>dinner</h3>
       </a>
       <a href="#" class="box">
-        <img src="/assets/images/cat_6.png" />
+        <img src="../assets/images/cat_6.png" />
         <h3>coffee</h3>
       </a>
     </section>
@@ -110,9 +109,12 @@
           <span>Newsletter</span>
         </div>
         <form action="">
-          <input type="email" name="" placeholder="Enter your email" id="" />
-          <input type="submit" value="subscribe" />
+          <input type="email" name="" placeholder="Enter your email" id="subscription-email" />
+          <input type="button" value="subscribe" onclick ="sendSubscription()" />
         </form>
+      </div>
+      <div class="subscribe">
+      <span id="subscribe"></span>
       </div>
       <div class="box-container">
         <ul class="footer-menu-list">
@@ -123,16 +125,17 @@
         </ul>
       </div>
       <div class="social-media-icons">
-      <ul class="social-list">
-        <li><i class="fab fa-facebook-f"></i></li>
-        <li><i class="fab fa-instagram"></i></li>
-        <li><i class="fab fa-twitter"></i></li>
-        <li><i class="fab fa-youtube"></i></li>
-        <li><i class="fab fa-pinterest-p"></i></li>
-      </ul>
+        <ul class="social-list">
+          <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"> </i></a></li>
+          <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+          <li><a href="https://www.pinterest.ca/"><i class="fab fa-pinterest-p"></i></a></li>
+        </ul>
       <p class="copyright">&copy; 2022 Food Point. All Rights Reserved. Privacy Policy. Design by <a href="">Synergy</a></p>
     </div>
     </footer>
     <!-- footer section ends -->
+    <script src="../javascript/script.js"></script>
   </body>
 </html>
