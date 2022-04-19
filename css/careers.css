@@ -30,6 +30,8 @@ body {
 
 html {
     overflow-x: hidden;
+
+  font-size: 65%;
 }
 
 html::-webkit-scrollbar {

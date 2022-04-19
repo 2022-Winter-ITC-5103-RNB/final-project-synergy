@@ -2,6 +2,8 @@
 
 ## Team Name: Synergy
 
+## Deployed Project Link : https://2022-winter-itc-5103-rnb.github.io/final-project-synergy/html/index.html
+
 ## Group Members:
 
 ## Vrushtiben Patel - N01510775
