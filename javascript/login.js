@@ -48,7 +48,12 @@ const processEntries = () => {
         if (email.value == user_email && password.value == user_password) {
             $('form').submit();
         } else {
-            alert("Please enter valid email and password");
+            Swal.fire({
+                position: 'top-end',
+                icon: 'error',
+                title: 'Please enter valid email and password',
+                showConfirmButton: true
+            })
         }
     }
 };
