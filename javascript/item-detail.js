@@ -1,7 +1,13 @@
 let quantity = 1;
-let amount = 9.35;
+
+// get item list from array from index
+let itemList = JSON.parse(localStorage.getItem("itemList"));
+let selectedItem = localStorage.getItem("selectedItem");
+console.log(itemList[selectedItem]);
+let selectedItemData = itemList[selectedItem];
 document.querySelector('.quantity').innerHTML = quantity;
-document.querySelector('#amount').innerHTML = amount;
+document.querySelector('#amount').innerHTML = selectedItemData.price;
+document.querySelector('.item-name').innerHTML = selectedItemData.itemName;
 document.querySelector('#total').innerHTML = quantity * amount;
 document.querySelector('.totalQuantity').innerHTML = quantity;
 

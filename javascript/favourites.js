@@ -55,18 +55,19 @@ let itemList = [{
         isFavourite: 1,
     }
 ];
+localStorage.setItem("itemList", JSON. stringify(itemList));
 
 function displayItems() {
     let favItemData = '';
 
     // display item details using for loop and html attributes
     for (let [index, item] of itemList.entries()) {
-        favItemData += '<div class="item"><div class="card"><a href="../html/item-detail.html">';
+        favItemData += `<div class="item"><div class="card">`;
         favItemData += `<img class="card-img-top" src=${item.imageUrl} alt="Card image cap"><div class="card-body"><div class="row"><div class="col-lg-10">`;
-        favItemData += `<h5 class="card-title">${item.itemName}</h5>`;
+        favItemData += `<h5 class="card-title"><a href="../html/item-detail.html" onclick="selectedItem(${index})">${item.itemName}</a></h5>`;
         favItemData += `<p class="price">Price: <span style="font-weight: 650;">$${item.price}</span></p></div>`;
         favItemData += `<div class="col-lg-2"><i class="fas fa-heart" onclick="unFavourite(${index})"></i></div>`;
-        favItemData += ' </div><a href="#" class="btn btn-secondary">Add to Cart</a></div></div></a></div>';
+        favItemData += ' </div><a href="#" class="btn btn-secondary">Add to Cart</div></div></a></div>';
 
         // set html content to the item container for showing list of data
         document.querySelector('.item-container').innerHTML = favItemData;
@@ -78,4 +79,9 @@ function displayItems() {
 function unFavourite(index) {
     itemList.splice(index, 1);
     displayItems();
+}
+
+// function for selected item from item list
+function selectedItem(index) {
+    localStorage.setItem("selectedItem", index);
 }
