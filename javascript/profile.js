@@ -35,6 +35,6 @@ function validateForm() {
       return false;
     }
   
-   alert("Profile Saved Successfully");
+   
    return true;
 }

@@ -1,144 +1,162 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Reserve a Table</title>
-        <link rel="stylesheet" href="../css/dhanvi_css.css">
-    </head>
-    <body>
-        
-        <div id="wrapper">
-            <header class="header">
-                <span class="logo">Food Point</span>
-                <a href="#" >
-                    <img src ="../assets/images/logo.jpg">
-                </a>
-                
-                <nav class="navbar">
-                    <a href="#">Home</a>
-                    <a href="gallery.html">gallery</a>
-                    <a href="menu.html">Menu</a>
-                    <a href="favourites.html">Favourites</a>
-                    <a href="careers.html">Career</a>
-                    <a href="AboutUs.html">About us</a>
-                    <a href="login.html">Logout</a>
-                  </nav>
-              </header>
+  <head>
+    <title>Reserve a Table</title>
+    <link rel="stylesheet" href="../css/dhanvi_css.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <header class="header">
+        <span class="logo">Food Point</span>
+        <a href="#">
+          <img src="../assets/images/logo.jpg" />
+        </a>
 
-                </div>
+        <nav class="navbar">
+          <a href="#">Home</a>
+          <a href="gallery.html">gallery</a>
+          <a href="menu.html">Menu</a>
+          <a href="favourites.html">Favourites</a>
+          <a href="careers.html">Career</a>
+          <a href="AboutUs.html">About us</a>
+          <a href="login.html">Logout</a>
+        </nav>
+      </header>
+    </div>
 
-            <main>
-                
-                <aside>
-                    
-                    <a href="#reservetable">
-                  <img src="../assets/images/book_a_table.jpg" width="500px"style="max-width:100%;height:auto;" alt="Reserve your table ">
-                </a> 
-                </aside> 
-                
+    <main>
+      <aside>
+        <a href="#reservetable">
+          <img
+            src="../assets/images/book_a_table.jpg"
+            width="500px"
+            style="max-width: 100%; height: auto"
+            alt="Reserve your table "
+          />
+        </a>
+      </aside>
 
-                
-               
+      <div>
+        <form
+          id="reservetable"
+          onsubmit="return validateForm()"
+          method="get"
+          name="reserveatable"
+        >
+          <table>
+            <tr>
+              <td><label for="reserve">Reserve Table</label></td>
+              <td><input type="date" name="reserve" id="reserve" /></td>
+            </tr>
 
-                <div>
-                    <form id="reservetable">
-                        <table>
-                            <tr>
-                                <td> <label for="reserve">Reserve Table</label></td>
-                                <td><input type="date" name="reserve" id="reserve"></td>
-                                
-                            </tr>
+            <tr>
+              <td><label for="no_of_person">Total person</label></td>
 
-                            <tr>
-                               
-                                <td> <label for="no_of_person">Total person</label></td>
+              <td>
+                <select name="no_of_person" id="no_of_person">
+                  <option value="one_person">1 person</option>
+                  <option value="two_person">2 person</option>
+                  <option value="three_person">3 person</option>
+                  <option value="four_person">4 person</option>
+                  <option value="five_person">5 person</option>
+                  <option value="six_person">6 person</option>
+                  <option value="seven_person">7 person</option>
+                  <option value="eight_person">8 person</option>
+                  <option value="nine_person">9 person</option>
+                  <option value="ten_person">10 person</option>
+                  <option value="more_than_eleven_person">+11 person</option>
+                </select>
+              </td>
+            </tr>
 
-                                <td>
-                                    <select name="no_of_person">
-                                        <option value="one_person">1 person</option>
-                                        <option value="two_person">2 person</option>
-                                        <option value="three_person">3 person</option>
-                                        <option value="four_person">4 person</option>
-                                        <option value="five_person">5 person</option>
-                                        <option value="six_person">6 person</option>
-                                        <option value="seven_person">7 person</option>
-                                        <option value="eight_person">8 person</option>
-                                        <option value="nine_person">9 person</option>
-                                        <option value="ten_person">10 person</option>
-                                        <option value="more_than_eleven_person">+11 person</option>
+            <tr>
+              <td>
+                Brunch Time
+                <select name="brunchtime" id="brunchtime">
+                  <option value="10:00 am">10:00 am</option>
+                  <option value="10:30 am">10:30 am</option>
+                  <option value="11:00 am">11:00 am</option>
+                  <option value="11:30 am">11:30 am</option>
+                  <option value="12:00 pm">12:00 pm</option>
+                  <option value="12:30 pm">12:30 pm</option>
+                  <option value="01:00 pm">01:00 pm</option>
+                  <option value="01:30 pm">01:30 pm</option>
+                  <option value="02:00 pm">02:00 pm</option>
+                  <option value="02:30 pm">02:30 pm</option>
+                  <option value="03:00 pm">03:00 pm</option>
+                </select>
+              </td>
 
-                                    </select>
-                                </td>
-                            </tr>
+              <td>
+                Dinner Time
+                <select name="dinnertime" id="dinnertime">
+                  <option value="05:00 pm">05:00 pm</option>
+                  <option value="05:30 pm">05:30 pm</option>
+                  <option value="06:00 pm">06:00 pm</option>
+                  <option value="06:30 pm">06:30 pm</option>
+                  <option value="07:00 pm">07:00 pm</option>
+                  <option value="07:30 pm">07:30 pm</option>
+                  <option value="08:00 pm">08:00 pm</option>
+                  <option value="08:30 pm">08:30 pm</option>
+                  <option value="09:00 pm">09:00 pm</option>
+                  <option value="09:30 pm">09:30 pm</option>
+                  <option value="10:00 pm">10:00 pm</option>
+                </select>
+              </td>
+            </tr>
+          </table>
+          <p id="submit">
+            <input type="submit" name="Reserve Table" id="reservetable" />
+          </p>
+        </form>
 
-                            <tr>
-                                
-                                <td>Brunch Time <select name="brunchtime">
-                                    <option value="10:00 am">10:00 am</option>
-                                    <option value="10:30 am">10:30 am</option>
-                                    <option value="11:00 am">11:00 am</option>
-                                    <option value="11:30 am">11:30 am</option>
-                                    <option value="12:00 pm">12:00 pm</option>
-                                    <option value="12:30 pm">12:30 pm</option>
-                                    <option value="01:00 pm">01:00 pm</option>
-                                    <option value="01:30 pm">01:30 pm</option>
-                                    <option value="02:00 pm">02:00 pm</option>
-                                    <option value="02:30 pm">02:30 pm</option>
-                                    <option value="03:00 pm">03:00 pm</option>
-                                </select>
-                            </td>
+        <dl>
+          <dt>Safety Measures</dt>
+          <br />
+          <dd>
+            This restaurant has committed to taking certain safety measures to
+            provide a safe, comfortable dining experience.
+          </dd>
+        </dl>
 
-                            <td>Dinner Time <select name="dinnertime">
-                                <option value="05:00 pm">05:00 pm</option>
-                                <option value="05:30 pm">05:30 pm</option>
-                                <option value="06:00 pm">06:00 pm</option>
-                                <option value="06:30 pm">06:30 pm</option>
-                                <option value="07:00 pm">07:00 pm</option>
-                                <option value="07:30 pm">07:30 pm</option>
-                                <option value="08:00 pm">08:00 pm</option>
-                                <option value="08:30 pm">08:30 pm</option>
-                                <option value="09:00 pm">09:00 pm</option>
-                                <option value="09:30 pm">09:30 pm</option>
-                                <option value="10:00 pm">10:00 pm</option>
-                            </select>
-                        </td>
-                    </tr>
-                               
-                        </table>
-                     <p id="submit">   <input type="submit" name="Reserve Table" id="reservetable" >  </p>
-                    </form>
-                
+        <div>
+          <table id="safetymeasures">
+            <tr>
+              <td>
+                <img
+                  src="../assets/images/contactlesspolicy.jpg"
+                  width="40px"
+                />
+              </td>
+              <td>
+                <img
+                  src="../assets/images/cleaning_prevention.png"
+                  width="40px"
+                />
+              </td>
+              <td>
+                <img
+                  src="../assets/images/protective_equipment.jpg"
+                  width="40px"
+                />
+              </td>
+              <td>
+                <img
+                  src="../assets/images/staffing_operations.png"
+                  width="40px"
+                />
+              </td>
+            </tr>
 
-
-                <dl>
-                    <dt>
-                        Safety Measures
-                    </dt>
-                    <br>
-                    <dd>
-                        This restaurant has committed to taking certain safety measures to provide a safe, comfortable dining experience.
-                    </dd>
-                </dl>
-
-                <div>
-                    <table id="safetymeasures">
-                    <tr>
-                      <td>  <img src="../assets/images/contactlesspolicy.jpg" width="40px"> </td>
-                      <td>  <img src="../assets/images/cleaning_prevention.png" width="40px"> </td>
-                      <td>  <img src="../assets/images/protective_equipment.jpg" width="40px"> </td>
-                      <td>  <img src="../assets/images/staffing_operations.png" width="40px"> </td>
-                    </tr>
-
-                    <tr>
-                        <td>Contactless Policy</td>
-                        <td>Cleaning and Prevention</td>
-                        <td>Protective Equipment</td>
-                        <td>Staffing-Operations</td>
-                    </tr>
-                    
-                </table>
-
-                </div>
-                <!--
+            <tr>
+              <td>Contactless Policy</td>
+              <td>Cleaning and Prevention</td>
+              <td>Protective Equipment</td>
+              <td>Staffing-Operations</td>
+            </tr>
+          </table>
+        </div>
+        <!--
                 <dl>
                     <dt>Need to Know</dt>
 
@@ -149,58 +167,66 @@
 
                 </dl>
                 -->
+      </div>
+    </main>
 
-            </div>
-            </main>
+    <!-- footer section starts  -->
+    <footer>
+      <div class="newsletter">
+        <div class="heading">
+          <span>Newsletter</span>
+        </div>
+        <form action="">
+          <input type="email" name="" placeholder="Enter your email" id="" />
+          <input type="submit" value="subscribe" />
+        </form>
+      </div>
+      <div class="box-container">
+        <ul class="footer-menu-list">
+          <li><a href="#">home</a></li>
+          <li><a href="gallery.html">gallery</a></li>
+          <li><a href="#">order</a></li>
+          <li><a href="#">contact us</a></li>
+        </ul>
+      </div>
+      <div class="social-media-icons">
+        <ul class="social-list">
+          <li>
+            <a href="https://www.facebook.com/"
+              ><i class="fab fa-facebook-f"> </i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.pinterest.ca/"
+              ><i class="fab fa-pinterest-p"></i
+            ></a>
+          </li>
+        </ul>
+        <p class="copyright">
+          &copy; 2022 Food Point. All Rights Reserved. Privacy Policy. Design by
+          <a href="">Synergy</a>
+        </p>
+      </div>
 
-            
-               <!-- footer section starts  -->
-             <footer>
-                    <div class="newsletter">
-                         <div class="heading">
-                             <span>Newsletter</span>
-                         </div>
-                    <form action="">
-                         <input type="email" name="" placeholder="Enter your email" id="" />
-                        <input type="submit" value="subscribe" />
-                     </form>
-                     </div>
-                     <div class="box-container">
-                        <ul class="footer-menu-list">
-                             <li><a href="#">home</a></li>
-                             <li><a href="gallery.html">gallery</a></li>
-                             <li><a href="#">order</a></li>
-                             <li><a href="#">contact us</a></li>
-                          </ul>
-                     </div>
-                    <div class="social-media-icons">
-                        <ul class="social-list">
-                            <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"> </i></a></li>
-                            <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
-                            <li><a href="https://www.pinterest.ca/"><i class="fab fa-pinterest-p"></i></a></li>
-                          </ul>
-                     <p class="copyright">&copy; 2022 Food Point. All Rights Reserved. Privacy Policy. Design by <a href="">Synergy</a></p>
-                     </div>
-
-                     <!-- font awesome cdn link for vector icons and logos -->
-                    <link
-                         rel="stylesheet"
-                        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-                     />
-             </footer>
-      <!-- footer section ends -->
-            
-    </body>
+      <!-- font awesome cdn link for vector icons and logos -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      />
+    </footer>
+    <!-- footer section ends -->
+  </body>
 </html>
-
-
-
-
-
-
-
-
-
-
