@@ -104,7 +104,7 @@ html::-webkit-scrollbar-thumb {
 
 	width: 100%;
 
-	height: 200px;
+	height: 220px;
 
 	overflow: hidden;
 
@@ -130,7 +130,7 @@ html::-webkit-scrollbar-thumb {
 
 	width: 300px;
 
-	height: 200px;
+	height: 220px;
 
 	object-fit: cover;
 
@@ -144,7 +144,9 @@ html::-webkit-scrollbar-thumb {
 
 .product-info{
 
-	padding: 20px;
+	padding: 30px;
+
+  margin-left: 5em;
 
 	width: 100%;
 
@@ -152,21 +154,24 @@ html::-webkit-scrollbar-thumb {
 
 }
 
-.product-name, .product-price, .product-offer{
+.product-name, .product-price, .product-offer, .product-quantity{
 
 	margin-bottom: 20px;
+  margin-top: 5px;
+  margin-left: 2em;
 
 }
 
 .product-remove{
 
-	position: absolute;
+	margin-left: 22em;
 
 	bottom: 20px;
 
 	right: 20px;
 
 	padding: 10px 25px;
+
 
 	background-color: green;
 
@@ -190,6 +195,13 @@ html::-webkit-scrollbar-thumb {
 
 }
 
+.product-quantity {
+
+  font-size: large;
+  font-weight: bold;
+
+}
+
 .product-quantity  input{
 
 	width: 40px;
@@ -197,6 +209,9 @@ html::-webkit-scrollbar-thumb {
 	padding: 5px;
 
 	text-align: center;
+
+  font-size: large;
+  font-weight: bold;
 
 }
 
