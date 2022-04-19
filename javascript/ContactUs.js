@@ -28,6 +28,14 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   let res = validateInputs();
+
+  Swal.fire({
+    position: "top-end",
+    icon: "success",
+    title: "Thank you for giving your valuable feedback.",
+    showConfirmButton: false,
+    timer: 1500,
+  });
   if (res) {
     e.target.reset();
   }
