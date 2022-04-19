@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
-    <link rel="stylesheet" href="/css/AboutUsstyle.css">
+    <link rel="stylesheet" href="../css/AboutUsstyle.css">
 </head>
 <body>
     <div id="wrapper">
@@ -14,10 +14,10 @@
       <header class="header">
         <span class="logo">Food Point</span>
         <a href="#" >
-          <img src ="/assets/images/logo.jpeg">
+          <img src ="../assets/images/logo.jpeg">
         </a>
         
-        <nav class="navbar">
+        <nav class="navbar" id="myTopnav">
           <a href="#">Home</a>
           <a href="#">Menu</a>
           <a href="#">Orders</a>
@@ -26,6 +26,9 @@
           <a href="#">Contact us</a>
           <a href="#">About us</a>
           <a href="#">Logout</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
         </nav> 
       </header>
       <!-- header section ends  -->
@@ -72,21 +75,21 @@
             </div>
             <div class="row">
                 <div class="column">
-                    <p>
-                        <img alt ="chef-img" src="/assets/images/chef.png" height="40px" width="40px">
-                    </p>
+                   
+                        <img alt ="chef-img" src="../assets/images/chef.png" height="40px" width="40px">
+                   
                     <p><b>Best Chef</b></p>
                 </div>
                 <div class="column">
-                    <p>
-                        <img alt ="chef-img" src="/assets/images/table.png" height="40px" width="40px">
-                    </p>
+                   
+                        <img alt ="chef-img" src="../assets/images/table.png" height="40px" width="40px">
+                   
                     <p><b>30+ Tables</b></p>
                 </div>
                 <div class="column">
-                    <p>
-                        <img alt ="chef-img" src="/assets/images/clean-energy.png" height="40px" width="40px">
-                    </p>
+                   
+                        <img alt ="chef-img" src="../assets/images/clean-energy.png" height="40px" width="40px">
+                   
                     <p><b>Clean Environment</b></p>
                 </div>
             </div>
@@ -135,11 +138,11 @@
         </div>
         <div class="social-media-icons">
         <ul class="social-list">
-          <li><i class="fab fa-facebook-f"></i></li>
-          <li><i class="fab fa-instagram"></i></li>
-          <li><i class="fab fa-twitter"></i></li>
-          <li><i class="fab fa-youtube"></i></li>
-          <li><i class="fab fa-pinterest-p"></i></li>
+          <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"> </i></a></li>
+          <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+          <li><a href="https://www.pinterest.ca/"><i class="fab fa-pinterest-p"></i></a></li>
         </ul>
         <p class="copyright">&copy; 2022 Food Point. All Rights Reserved. Privacy Policy. Design by <a href="">Synergy</a></p>
       </div>
@@ -152,5 +155,7 @@
   />
       <!-- footer section ends -->
 </div>
+<script src="../javascript/AboutUs.js">
+  </script>
 </body>
 </html>

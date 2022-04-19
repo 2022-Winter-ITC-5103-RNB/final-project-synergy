@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/AboutUsstyle.css">
+    <link rel="stylesheet" href="../css/Contactstyle.css">
     <title>Contact Us</title>
 </head>
 <body>
@@ -12,10 +12,10 @@
        <header class="header">
         <span class="logo">Food Point</span>
         <a href="#" >
-          <img src ="/assets/images/logo.jpeg">
+          <img src ="../assets/images/logo.jpeg">
         </a>
         
-        <nav class="navbar">
+        <nav class="navbar" id="myTopnav">
           <a href="#">Home</a>
           <a href="#">Menu</a>
           <a href="#">Orders</a>
@@ -24,6 +24,9 @@
           <a href="#">Contact us</a>
           <a href="#">About us</a>
           <a href="#">Logout</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
         </nav> 
       </header>
       <!-- header section ends  -->
@@ -31,14 +34,13 @@
       <!-- Main section starts  -->
       <main>
 
-        <form name="Information_form" action="/action_page.php" onsubmit="validateForm()" method="post" required>
         <h1>Contact Us</h1>
-
+        
         <div id="address">
-            <h3> Address : </h3>
-            <p>BOVAIRD (BRAMPTON)</p>
-            <p>80 Rosedean Dr W, Brampton, ON L6X 0T9</p>
-            <p>+1 (905) 796-0000</p>
+          <h3> Address : </h3>
+          <p>BOVAIRD (BRAMPTON)</p>
+          <p>80 Rosedean Dr W, Brampton, ON L6X 0T9</p>
+          <p>+1 (905) 796-0000</p>
             <h3>Opening <b>Hours : </b></h3>
             <p>Monday - Thursday : 10 am to 9:30 pm</p>
             <p>Friday - Saturday : 10 am to 10 pm</p>
@@ -48,38 +50,35 @@
         <h3>Get In Touch</h3>
 
         <p>
-            We at Food Point are devoted to make your dining experience pleasurable. 
-            Contact us to find out the hottest news on specials discounts and events.
-            Please spare a moment to make us aware of how we have been doing.
-            It would be only through your suggestion and remarks that can facilitate and motivate us to improve.
+          We at Food Point are devoted to make your dining experience pleasurable. 
+          Contact us to find out the hottest news on specials discounts and events.
+          Please spare a moment to make us aware of how we have been doing.
+          It would be only through your suggestion and remarks that can facilitate and motivate us to improve.
         </p>
-
+        
+        <form  id="form" class="input-control" action="" >
             <fieldset>
-                <table>
-                    <tr>
-                        <td>Name: </td>
-                        <td><input type="text" name="name" required></td>
-                    </tr>
-                    <tr>
-                        <td>E-Mail: </td>
-                        <td><input type="email" name="email" required></td>
-                    </tr>
-                    <tr>
-                        <td>Phone number: </td>
-                        <td><input type="tel" name="phone_no" placeholder="123-454-6781"
-                         pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></td>
-                    </tr>
-                </table>
-
-                <tr>
-                    <!-- textarea -->
-            <td><label for="Query">Query: </label></br></td>
-            <td><textarea id="Query" name="Query" rows="5" cols="50" required></textarea></td>
-        </tr></br>
-        <tr id="submit">
-            <!-- submit butto   n -->
-            <input type="submit" id="submit" name="submit" value="Submit">
-        </tr>
+              <div class="form-group">
+                <label for="name">Name :</label>
+                <input type="text" name="name" id="name"  />
+                <div class="error"></div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email :</label>
+                <input type="email" name="email" id="email" />
+                <div class="error"></div>
+              </div>
+              <div class="form-group">
+                <label for="phone_no" style="margin: 0;">Phone Number :</label>
+                <input type="number" placeholder="123-454-6781" id="phone_no"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+                <div class="error"></div>
+              </div>
+              <div class="form-group">
+                <label for="Query">Query</label>
+                <textarea name="Query" rows="5" cols="20" id="query" ></textarea>
+                <div class="error"></div>
+              </div>
+              <input type="submit" class="submit"  name="submit" value="Submit">              
             </fieldset>
             </form>
       </main>
@@ -105,11 +104,11 @@
         </div>
         <div class="social-media-icons">
         <ul class="social-list">
-          <li><i class="fab fa-facebook-f"></i></li>
-          <li><i class="fab fa-instagram"></i></li>
-          <li><i class="fab fa-twitter"></i></li>
-          <li><i class="fab fa-youtube"></i></li>
-          <li><i class="fab fa-pinterest-p"></i></li>
+          <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"> </i></a></li>
+          <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+          <li><a href="https://www.pinterest.ca/"><i class="fab fa-pinterest-p"></i></a></li>
         </ul>
         <p class="copyright">&copy; 2022 Food Point. All Rights Reserved. Privacy Policy. Design by <a href="">Synergy</a></p>
       </div>
@@ -121,6 +120,9 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
   />
       <!-- footer section ends -->
+      <script src="../javascript/ContactUs.js">
      
+      
+      </script>
 </body>
 </html>
