@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
 * {
-    padding: 0;
+    font-family: "Arial";
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: Montserrat;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -23,112 +28,69 @@ body {
     font-family: 'segoe ui';
 }
 
+html {
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #27ae60;
+    border-radius: 5rem;
+}
+
 h1 {
-    font-size: 2.5rem;
-    color: #4e5163;
+    font-size: 2.5em;
+    text-align: center;
+    color: #27ae60;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 4px;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #fff;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 7.5%;
+}
+
+.header img {
+    height: 5rem;
+}
+
+.header .logo {
+    font-size: 38px;
+    font-weight: bolder;
+    color: #130f40;
+}
+
+.header .navbar a {
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: #666;
+}
+
+.header .navbar a:hover {
+    color: #27ae60;
 }
 
 i::before {
     background: transparent;
-}
-
-.nav {
-    padding: 10px 30px;
-    width: 100%;
-    background-color: #333333;
-    position: relative;
-}
-
-.nav>.nav-header {
-    display: inline;
-}
-
-.nav>.nav-header>.nav-title {
-    display: inline-block;
-}
-
-.nav>.nav-header>.nav-title>img {
-    width: 10rem;
-}
-
-.nav>.nav-btn {
-    display: none;
-}
-
-.nav>.nav-links {
-    display: inline;
-    float: right;
-    font-size: 18px;
-}
-
-.nav>.nav-links>a {
-    display: inline-block;
-    padding: 13px 10px 13px 10px;
-    text-decoration: none;
-    color: #efefef;
-}
-
-.nav>.nav-links>a:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
-.nav .active {
-    background-color: rgba(0, 0, 0, 0.3);
-    color: #cf2f2f;
-}
-
-.nav>#nav-check {
-    display: none;
-}
-
-@media (max-width:600px) {
-    .nav>.nav-btn {
-        display: inline-block;
-        position: absolute;
-        right: 0px;
-        top: 0px;
-    }
-    .nav>.nav-btn>label {
-        display: inline-block;
-        width: 50px;
-        height: 50px;
-        padding: 13px;
-    }
-    .nav>.nav-btn>label:hover,
-    .nav #nav-check:checked~.nav-btn>label {
-        background-color: #333333;
-    }
-    .nav>.nav-btn>label>span {
-        display: block;
-        width: 25px;
-        height: 10px;
-        border-top: 2px solid #eee;
-    }
-    .nav>.nav-links {
-        z-index: 2;
-        position: absolute;
-        display: block;
-        width: 100%;
-        background-color: #333;
-        height: 0px;
-        transition: all 0.3s ease-in;
-        overflow-y: hidden;
-        top: 50px;
-        left: 0px;
-        text-align: center;
-    }
-    .nav>.nav-links>a {
-        display: block;
-        width: 100%;
-    }
-    .nav>#nav-check:not(:checked)~.nav-links {
-        height: 0px;
-    }
-    .nav>#nav-check:checked~.nav-links {
-        padding: 4rem 0;
-        height: calc(100vh - 50px);
-        overflow-y: auto;
-    }
 }
 
 .careers {
@@ -258,16 +220,6 @@ i::before {
     }
 }
 
-.header {
-    text-align: center;
-    margin-bottom: 3.5rem;
-    margin-top: 6rem;
-}
-
-.header h1 {
-    color: #4e5163;
-}
-
 .box p {
     color: var(--grayishBlue);
 }
@@ -331,9 +283,6 @@ h2 {
     }
     .box {
         width: 20%;
-    }
-    .header p {
-        width: 30%;
     }
 }
 
@@ -556,68 +505,6 @@ button:hover:after {
     background-color: blue;
 }
 
-
-/* footer */
-
-footer {
-    background-color: #242424;
-}
-
-footer img {
-    margin-bottom: 1rem;
-}
-
-.footerContent h4 {
-    margin-bottom: 1.5rem;
-}
-
-.footerContent {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    height: 85%;
-    text-align: left;
-}
-
-.footerContent>div {
-    color: #eee;
-    margin: 2rem 1rem;
-    width: 20%;
-}
-
-.footerContent a {
-    text-decoration: none;
-    color: #bababa;
-}
-
-.quickLinks {
-    height: 20vh;
-    margin-left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: left;
-}
-
-.footerContent p {
-    font-size: 1rem;
-    color: #bababa;
-}
-
-footer hr {
-    border: none;
-    height: .3px;
-    margin: 0 2rem;
-    background-color: #545454;
-}
-
-.copyRight {
-    text-align: center;
-    color: #545454;
-    font-size: 0.9rem;
-    padding: 0.8rem;
-}
-
 i {
     font-size: 2rem;
 }
@@ -658,17 +545,178 @@ i {
     h4 {
         font-size: 1rem;
     }
-    .footerContent>div {
-        width: 30%;
+}
+
+footer {
+    background: #f7f7f7;
+    padding: 2rem;
+}
+
+footer .newsletter {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+footer .newsletter h3 {
+    font-size: 2.5rem;
+    color: #130f40;
+    padding-bottom: 1rem;
+}
+
+footer .newsletter form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    max-width: 70rem;
+    display: flex;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+footer .newsletter form input[type="email"] {
+    height: 100%;
+    width: 100%;
+    padding: 1rem 1.2rem;
+    font-size: 1.6rem;
+    color: #130f40;
+    text-transform: none;
+}
+
+footer .newsletter form input[type="button"] {
+    padding: 0 2rem;
+    font-size: 1.6rem;
+    color: #fff;
+    background: #27ae60;
+    cursor: pointer;
+}
+
+footer .newsletter form input[type="button"]:hover {
+    background: #130f40;
+}
+
+.subscribe {
+    text-align: center;
+}
+
+.subscribe span {
+    font-size: 1.6rem;
+    color: #27ae60;
+}
+
+footer .box-container .box h3 {
+    font-size: 2.2rem;
+    color: #130f40;
+    padding: 1rem 0;
+}
+
+footer .box-container .box p {
+    font-size: 1.4rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+footer .box-container .box a {
+    display: block;
+    font-size: 1.4rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+footer .box-container .box a:hover {
+    color: #27ae60;
+}
+
+footer .box-container .box a:hover i {
+    padding-right: 2rem;
+}
+
+footer .box-container .box a i {
+    padding-right: 0.5rem;
+    color: #27ae60;
+}
+
+.footer-menu-list {
+    text-align: center;
+    width: 100%;
+}
+
+.footer-menu-list li {
+    padding: 0 20px;
+    display: inline-block;
+    font-size: 1.6rem;
+    border-right: 1px solid #41A451;
+}
+
+.footer-menu-list li a {
+    color: #27ae60;
+}
+
+.social-media-icons {
+    width: 100%;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+ul.social-list>li {
+    display: inline-block;
+}
+
+ul.social-list>li {
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+ul.social-list a:hover {
+    color: #ffffff;
+    background: #41A451;
+}
+
+.social-list li i {
+    font-size: 2.1rem;
+    background-color: #eeeeee;
+    padding: 17px 20px;
+    border-radius: 50%;
+}
+
+.social-list li i:hover {
+    background-color: #41A451;
+    color: #fff;
+    cursor: pointer;
+}
+
+.copyright {
+    margin-top: 5rem;
+    font-size: 14px;
+    color: #666464;
+}
+
+.copyright a {
+    color: #666464;
+}
+
+.copyright a:hover {
+    color: #41A451;
+}
+
+@media (max-width: 1076px) {
+    .header .navbar {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+        border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
     }
-    .footerContent>div:first-of-type {
-        width: 90%;
+    .header .navbar a {
+        font-size: 1.5rem;
+        margin: 2rem;
+        display: block;
     }
-    .footerContent>div:last-of-type {
-        width: 90%;
-    }
-    .content2>div {
-        margin: 2rem 0;
-        font-size: 1.3rem;
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
     }
 }

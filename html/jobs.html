@@ -1,125 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <script src="https://kit.fontawesome.com/c331e0ecf1.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/css/sawan_css.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/jobs.css">
     <title>Jobs</title>
 </head>
+
 <body>
-    <nav class="nav">
-        <input type="checkbox" id="nav-check">
-        <div class="nav-header">
-          <div class="nav-title">
-            <img src="/assets/images/logo.jpeg" alt="logo">
-          </div>
+    <header class="header">
+        <span class="logo">Food Point</span>
+        <a href="./index.html">
+            <img src="../assets/images/logo.jpeg">
+        </a>
+
+        <nav class="navbar">
+            <a href="./index.html">Home</a>
+            <a href="./gallery.html">gallery</a>
+            <a href="./menu.html">Menu</a>
+            <a href="./favourites.html">Favourites</a>
+            <a href="./careers.html">Career</a>
+            <a href="./aboutUs.html">About us</a>
+            <a href="./login.html">Login</a>
+        </nav>
+    </header>
+    <main>
+        <section class="heroSection jobs">
+            <h2>JOBS</h2>
+        </section>
+        <section class="content">
+            <div class="content1">
+                <h1>Current Oppertunities</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="position">Position</th>
+                            <th class="location">Location</th>
+                            <th class="closingDate">Closing Date</th>
+                            <th class="description">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Main waiter</td>
+                            <td>Etobicoke Branch</td>
+                            <td>25th April, 2022</td>
+                            <td>The work is simple, all you have to do is, keep our customers happy and serve them well!</td>
+                        </tr>
+                        <tr>
+                            <td>Assistant chef</td>
+                            <td>Lakeshore Branch</td>
+                            <td>25th March, 2022</td>
+                            <td>Help main chef in all sort of tasks</td>
+                        </tr>
+                        <tr>
+                            <td>Receptionist </td>
+                            <td>Mississauga Branch</td>
+                            <td>23rd June, 2022</td>
+                            <td>Collect money and generate invoice and also help people out with their queries.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="content2">
+                <h1>How to Apply?</h1>
+                <div>
+                    <p>Please email your application (resume, cover letter, portfolio, etc.) to the hiring manager as specified in the job posting with the position title in the subject line. Only selected candidates will be contacted for interviews.</p>
+                    <br>
+                    <p><em>Restaurants Canada is an equal opportunity employer. We do not discriminate based on gender, religion, race, disabilities, sexual orientation, age, or any other status. All applicants are considered based on their qualifications and merits.</em></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="newsletter">
+            <div class="heading">
+                <span>Newsletter</span>
+            </div>
+            <form action="">
+                <input type="email" name="" placeholder="Enter your email" id="subscription-email" />
+                <input type="button" value="subscribe" onclick="sendSubscription()" />
+            </form>
         </div>
-        <div class="nav-btn">
-          <label for="nav-check">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
+        <div class="subscribe">
+            <span id="subscribe"></span>
         </div>
-        
-        <div class="nav-links">
-          <a href="/home.html">Home</a>
-          <a href="careers.html">Careers</a>
-          <a class="active"  href="/jobs.html">Jobs</a>
-          <a href="/about.html">About</a>
-          <a href="faq.html">FAQs</a>
+        <div class="box-container">
+            <ul class="footer-menu-list">
+                <li><a href="./jobs.html">jobs</a></li>
+                <li><a href="./faq.html">faqs</a></li>
+                <li><a href="./orderPlaced.html">order</a></li>
+                <li><a href="./contactUs.html">contact us</a></li>
+            </ul>
         </div>
-      </nav>
-     <main>
-        <section class="heroSection jobs">     
-            <h2>JOBS</h2>      
-          </section>
-         <section class="content">
-             <div class="content1">
-           <h1>Current Oppertunities</h1>
-             <table>
-                 <thead>
-                    <tr>
-                        <th class="position">Position</th>
-                        <th class="location">Location</th>
-                        <th class="closingDate">Closing Date</th>
-                        <th class="description">Description</th>
-                    </tr>
-                 </thead>
-                  <tbody>
-                      <tr>
-                          <td>Main waiter</td>
-                          <td>Etobicoke Branch</td>
-                          <td>25th April, 2022</td>
-                          <td>The work is simple, all you have to do is, keep our customers happy and serve them well!</td>
-                      </tr>
-                       <tr>
-                           <td>Assistant chef</td>
-                           <td>Lakeshore Branch</td>
-                           <td>25th March, 2022</td>
-                           <td>Help main chef in all sort of tasks</td>
-                       </tr>
-                       <tr>
-                           <td>Receptionist </td>
-                           <td>Mississauga Branch</td>
-                           <td>23rd June, 2022</td>
-                           <td>Collect money and generate invoice and also help people out with their queries.</td>
-                       </tr>
-                   </tbody>
-              </table>
-         </div>
-         <div class="content2">
-             <h1>How to Apply?</h1>
-             <div>
-                <p>Please email your application (resume, cover letter, portfolio, etc.) to the hiring manager as specified in the job posting with the position title in the subject line. Only selected candidates will be contacted for interviews.</p>
-                <br>
-                <p><em>Restaurants Canada is an equal opportunity employer. We do not discriminate based on gender, religion, race, disabilities, sexual orientation, age, or any other status. All applicants are considered based on their qualifications and merits.</em></p>
-             </div>
-          </div>
-         </section>
-     </main>
-     
+        <div class="social-media-icons">
+            <ul class="social-list">
+                <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"> </i></a></li>
+                <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="https://www.pinterest.ca/"><i class="fab fa-pinterest-p"></i></a></li>
+            </ul>
+            <p class="copyright">&copy; 2022 Food Point. All Rights Reserved. Privacy Policy. Design by <a href="">Synergy</a></p>
+        </div>
+    </footer>
 </body>
-<footer>
-    <div class="footerContent">
-<div><img src="./assets/foodPointDarkLogo.png" alt="logo" width="150px">
-<p>Food point is the only go-to-place in town if you are looking for tasty and yet healthy food.
-    The place has good ambiance with live sports events played on large displays. We also have music nights, standup comedy and many other events.
-</p></div>
-<div><h4>SOCIALS</h4>
-    <div class="quickLinks">
-        <p><a href="/home.html"><i class="fa-brands fa-facebook-square"></i> &nbsp;FaceBook</a></p>
-        <p><a href="/home.html"><i class="fa-brands fa-instagram-square"></i> &nbsp;Instagram</a></p>  
-        <p><a href="/home.html"><i class="fa-brands fa-twitter-square"></i> &nbsp;Twitter</a></p>
-        <p><a href="/home.html"><i class="fa-brands fa-linkedin"></i> &nbsp;LinkedIn</a></p>  
-    </div>
-</div>
-<div><h4>QUICK LINKS</h4>
-<div class="quickLinks">
-    <p><a href="/home.html">HOME</a></p>
-    <p><a href="/careers.html">CAREERS</a></p>
-    <p><a href="/jobs.html">JOBS</a></p>
-    <p><a href="/about.html">ABOUT</a></p>
-    <p><a href="/faq.html">FAQs</a></p>
-</div>
-</div>
-<div>
-    <h4>ADDRESS</h4>
-<p>1730 dexter st, Etobicoke</p>
-<p>M2F C49, ONTARIO</p>
-<P><em>ph: 938 837 124</em></P>
-<br>
-<p>636 kitkat st, Mississauga</p>
-<p>M7H 2G5, ONTARIO</p>
-<P><em>ph: 998 837 124</em></P>
-      </div>
-    </div>
-    <hr>
-    <div class="copyRight">
-        <p><em>&copy; 2022 FoodPoint. All rights reserved.</em></p>
-    </div>
-</footer>
 
 </html>
