@@ -10,7 +10,12 @@ function editQuantity(type) {
         quantity++;
     } else {
         if (quantity == 1) {
-            alert("Please select positive number of quantity");
+            Swal.fire({
+                position: 'top-end',
+                icon: 'error',
+                title: 'Please select positive number of quantity',
+                showConfirmButton: true
+            })
         } else {
             quantity--;
         }

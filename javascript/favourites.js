@@ -1,4 +1,4 @@
-let url = '/assets/images/';
+let url = '../assets/images/';
 
 // Automatically load the page
 window.onload = function () {
