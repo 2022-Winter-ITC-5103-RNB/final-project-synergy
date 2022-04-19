@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My profile</title>
     <link rel="stylesheet" href="/css/dhanvi_css.css" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
 
   <body>
@@ -13,7 +14,7 @@
       <header class="header">
         <span class="logo">Food Point</span>
         <a href="#">
-          <img src="/assets/images/logo.jpeg" />
+          <img src="../assets/images/logo.jpeg" />
         </a>
 
         <nav class="navbar">
@@ -32,14 +33,14 @@
       <table>
         <h2 id="head">My Profile</h2>
 
-        <form onsubmit="return validateForm()" method="get" name="profile">
+        <form method="get" name="profile">
           <tr>
             <td>
               <label for="profile"></label>
             </td>
             <td>
               <img
-                src="/assets/images/profile.png"
+                src="../assets/images/profile.png"
                 style="max-width: 100%; height: auto"
                 alt="profile"
                 width="100px"
@@ -117,7 +118,13 @@
 
           <tr>
             <td>
-              <input type="submit" name="submit" id="submit" value="save" />
+              <input
+                type="submit"
+                name="submit"
+                id="profile-submit"
+                value="save"
+                onclick="validateForm()"
+              />
             </td>
             <td>
               <input type="reset" name="reset" id="reset" />
@@ -190,6 +197,6 @@
       />
     </footer>
     <!-- footer section ends -->
-    <script src="/final-project-synergy/javascript/profile.js"></script>
+    <script src="../javascript/profile.js"></script>
   </body>
 </html>
