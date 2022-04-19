@@ -111,7 +111,7 @@
   .card-title {
     font-weight: 700;
     font-size: 18px;
-    color: rgb(43, 70, 37);
+    color: rgb(43, 70, 37) !important;
   }
 
   .item-container {
