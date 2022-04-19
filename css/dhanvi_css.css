@@ -358,6 +358,10 @@ margin-left: 85px;
   
 }
 
+#profile-submit{
+  color: black;
+}
+
 @media  screen and (max-width:550px) {
   #footer-menu-list{
     padding: 0
@@ -374,4 +378,8 @@ margin-left: 85px;
 
 #submit1{
   background-color: white ;
+}
+
+#bottom{
+  text-align: center;
 }
