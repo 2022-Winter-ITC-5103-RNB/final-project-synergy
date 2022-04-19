@@ -221,7 +221,7 @@ main{
    font-size: larger;
    font-weight: bold;
    
-   background-image: url(/final-project-synergy/assets/images/profile_header.jpg);
+   background-image: url(/assets/images/profile_header.jpg);
    background-position: center auto;
    background-repeat: no-repeat;
    text-align: center;
@@ -271,6 +271,7 @@ aside{
   display: flex;
   flex-direction: row;
   align-content: flex-end;
+  
 
 }
 
@@ -327,16 +328,16 @@ padding: 10px 5px;
 margin-left: 85px;
 }
 #submit {
-  background: #00732d;
+  
   color: white;
 }
 
 
 
-#comment {
-  display: flex;
-  margin: 0 12px 0 229px;
+#comment1 {
+
   align-items: center;
+ 
 
 }
 
@@ -369,4 +370,8 @@ margin-left: 85px;
   .form-control{
     width: 80%;
   }
+}
+
+#submit1{
+  background-color: white ;
 }
