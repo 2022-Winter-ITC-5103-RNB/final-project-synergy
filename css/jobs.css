@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+* {
+    font-family: "Arial";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+}
+
+@media only screen and (max-width: 1024px) {
+    * {
+        font-size: 95%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    * {
+        font-size: 75%;
+    }
+}
+
+html {
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #27ae60;
+    border-radius: 5rem;
+}
+
+body {
+    margin: 0px;
+    font-family: 'segoe ui';
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #fff;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 7.5%;
+}
+
+.header img {
+    height: 5rem;
+}
+
+.header .logo {
+    font-size: 38px;
+    font-weight: bolder;
+    color: #130f40;
+}
+
+.header .navbar a {
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: #666;
+}
+
+.header .navbar a:hover {
+    color: #27ae60;
+}
+
+.jobs {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%), url(../assets/jobs.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+}
+
+.heroSection h2 {
+    font-size: 3rem;
+    color: aliceblue;
+    position: relative;
+    top: 35%;
+    text-align: center;
+}
+
+main .content {
+    margin: 3rem 9rem;
+}
+
+main h1 {
+    font-size: 2.3rem;
+    color: #4e5163;
+}
+
+main table {
+    border-collapse: collapse;
+    margin: 2rem;
+    font-size: 1.3rem;
+}
+
+main th,
+main td {
+    padding: 1rem;
+}
+
+main thead tr {
+    text-align: left;
+    background-color: #cf2f2f;
+    color: #efefef;
+}
+
+main tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+main tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+main th.position {
+    width: 20%;
+}
+
+main th.location {
+    width: 20%;
+}
+
+main th.closingDate {
+    width: 20%;
+}
+
+main th.description {
+    width: 40%;
+}
+
+.content>div {
+    margin-bottom: 3rem;
+}
+
+.content2>div {
+    margin: 2rem;
+    font-size: 1.3rem;
+}
+
+
+/* footer */
+
+footer {
+    background: #f7f7f7;
+    padding: 2rem;
+}
+
+footer .newsletter {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+footer .newsletter h3 {
+    font-size: 2.5rem;
+    color: #130f40;
+    padding-bottom: 1rem;
+}
+
+footer .newsletter form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    max-width: 70rem;
+    display: flex;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+footer .newsletter form input[type="email"] {
+    height: 100%;
+    width: 100%;
+    padding: 1rem 1.2rem;
+    font-size: 1.6rem;
+    color: #130f40;
+    text-transform: none;
+}
+
+footer .newsletter form input[type="button"] {
+    padding: 0 2rem;
+    font-size: 1.6rem;
+    color: #fff;
+    background: #27ae60;
+    cursor: pointer;
+}
+
+footer .newsletter form input[type="button"]:hover {
+    background: #130f40;
+}
+
+.subscribe {
+    text-align: center;
+}
+
+.subscribe span {
+    font-size: 1.6rem;
+    color: #27ae60;
+}
+
+footer .box-container .box h3 {
+    font-size: 2.2rem;
+    color: #130f40;
+    padding: 1rem 0;
+}
+
+footer .box-container .box p {
+    font-size: 1.4rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+footer .box-container .box a {
+    display: block;
+    font-size: 1.4rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+footer .box-container .box a:hover {
+    color: #27ae60;
+}
+
+footer .box-container .box a:hover i {
+    padding-right: 2rem;
+}
+
+footer .box-container .box a i {
+    padding-right: 0.5rem;
+    color: #27ae60;
+}
+
+.footer-menu-list {
+    text-align: center;
+    width: 100%;
+}
+
+.footer-menu-list li {
+    padding: 0 20px;
+    display: inline-block;
+    font-size: 1.6rem;
+    border-right: 1px solid #41A451;
+}
+
+.footer-menu-list li a {
+    color: #27ae60;
+}
+
+.social-media-icons {
+    width: 100%;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+ul.social-list>li {
+    display: inline-block;
+}
+
+ul.social-list>li {
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+ul.social-list a:hover {
+    color: #ffffff;
+    background: #41A451;
+}
+
+.social-list li i {
+    font-size: 2.1rem;
+    background-color: #eeeeee;
+    padding: 17px 20px;
+    border-radius: 50%;
+}
+
+.social-list li i:hover {
+    background-color: #41A451;
+    color: #fff;
+    cursor: pointer;
+}
+
+.copyright {
+    margin-top: 5rem;
+    font-size: 14px;
+    color: #666464;
+}
+
+.copyright a {
+    color: #666464;
+}
+
+.copyright a:hover {
+    color: #41A451;
+}
+
+@media (max-width: 1076px) {
+    .header .navbar {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+        border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+    }
+    .header .navbar a {
+        font-size: 1.5rem;
+        margin: 2rem;
+        display: block;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+i {
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 786px) {
+    main .content {
+        margin: 2rem;
+    }
+    p {
+        font-size: 1.3rem;
+    }
+    main table {
+        margin: 2rem;
+        font-size: 1.5rem;
+    }
+    main th,
+    main td {
+        padding: 1rem 0.5rem;
+    }
+    h4 {
+        font-size: 1rem;
+    }
+    .content2>div {
+        margin: 2rem 0;
+        font-size: 1.3rem;
+    }
+    main table {
+        margin: 2rem 0;
+    }
+}
