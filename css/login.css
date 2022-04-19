@@ -217,3 +217,11 @@ h2 {
     color: red;
     font-size: 15px;
 }
+
+.swal2-styled.swal2-confirm {
+    background-color: #41A451 !important;
+}
+
+.swal-modal {
+    text-align: center !important;
+}

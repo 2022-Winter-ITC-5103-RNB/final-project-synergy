@@ -114,6 +114,10 @@
     color: rgb(43, 70, 37) !important;
   }
 
+  .card-title a {
+    color: rgb(43, 70, 37) !important;
+  }
+
   .item-container {
     margin-left: 60px;
   }
