@@ -1,4 +1,4 @@
-## Assignment Name: : Project Task Phrase 1
+## Assignment Name: : Final Project
 
 ## Team Name: Synergy
 
